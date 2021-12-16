@@ -18,16 +18,20 @@ public class Principal {
         No prod1 = new No("Arroz", "Alimento", 11.45);
         No prod2 = new No("Feijão", "Alimento", 8.90);
         No prod3 = new No("Macarrão", "Alimento", 3.15);
+        No prod4 = new No("TV", "Eletro-eletronico", 899);
         
         listaSupermercado.InserirNoFinal(prod1);
         listaSupermercado.InserirNoFinal(prod2);
         listaSupermercado.InserirNoFinal(prod3);
+        listaSupermercado.InserirNoFinal(prod4);
         
         listaSupermercado.imprimirLista();
         
         listaSupermercado.valorFinalCompra();
         
         listaSupermercado.verificaItemLista("Macarrão");
+        
+        listaSupermercado.maiorValorItemLista();
 
     }
 

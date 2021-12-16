@@ -38,6 +38,7 @@ public class ListaSimples {
                 pos++;
 
             }
+            System.out.println("==============================");
 
         }
 
@@ -86,6 +87,30 @@ public class ListaSimples {
 
         }
 
+    }
+    
+    public void maiorValorItemLista(){
+        
+        if(primeiro == null){
+            System.out.println("Lista vazia!");
+        }else{
+            
+            No aux=primeiro;
+            double maiorValor=0;
+            while(aux != null){
+                
+                if(aux.preco > maiorValor){
+                    maiorValor = aux.preco;                    
+                }
+                
+                aux = aux.prox;
+                
+            }
+            
+            System.out.println("Maior valor da lista: "+maiorValor);
+            
+        }
+        
     }
 
 }
